@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0f766e;
+  --color-primary-hover: #115e59;
+  --color-tint: #ecfdf5;
+  --color-accent: #f59e0b;
+  --color-canvas: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-border: #e6e8ec;
+  --color-ink: #0b1220;
+  --color-muted: #5a6472;
+  --color-faint: #8a93a3;
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+  --color-info: #2563eb;
+
+  --font-heading: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 12px;
+  --radius-input: 10px;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.55;
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+}
+
+.tnum,
+[data-money] {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.55;
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Safi Cleaner",
+  "short_name": "Cleaner",
+  "description": "Field app for cleaners: today's jobs, schedule, photos and status updates.",
+  "start_url": "/login",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0F766E"
+}
